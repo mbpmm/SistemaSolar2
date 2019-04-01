@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Camara : MonoBehaviour
 {
-    public Transform[] target;
+    public List<Transform> target;
     float changeTarget;
     public float timeLimit;
     Vector3 initialPos;
@@ -28,7 +28,7 @@ public class Camara : MonoBehaviour
             changeTarget = 0;
             aux++;
         }
-        if (aux==target.Length)
+        if (aux == target.Count)
         {
             aux = 0;
         }
