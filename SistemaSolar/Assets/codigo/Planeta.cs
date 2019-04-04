@@ -22,6 +22,6 @@ public class Planeta : MonoBehaviour
     {
         angulo += speed*Time.deltaTime;
         transform.position =new Vector3 ( 0, radio * Mathf.Cos(angulo), radio * Mathf.Sin(angulo) );
-        transform.Rotate(new Vector3(rotationSpeed , 0, 0),rotationSpeed,Space.Self);
+        transform.Rotate(new Vector3( 0, rotationSpeed, 0),rotationSpeed,Space.Self);
     }
 }
