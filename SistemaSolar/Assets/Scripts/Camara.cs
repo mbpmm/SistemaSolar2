@@ -5,11 +5,12 @@ using UnityEngine;
 public class Camara : MonoBehaviour
 {
     public List<Transform> target;
-    float changeTarget;
     public float timeLimit;
-    Vector3 initialPos;
     public Vector3 offset;
-    int aux;
+
+    private Vector3 initialPos;
+    private float changeTarget;
+    private int aux;
     // Start is called before the first frame update
     void Start()
     {
